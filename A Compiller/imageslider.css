@@ -1,0 +1,568 @@
+body {
+    margin:0;
+    justify-content: center;
+ 
+
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow:hidden;
+text-align: center;
+float: right;
+
+}
+
+.slides {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    
+}
+
+.slides input {
+    display:none ;
+}
+
+.slide{
+    width: 10%;
+    transition:2s;
+
+}
+
+.slide img {
+    width:800px;
+    height:500px;
+}
+
+
+
+
+
+/*css for auto na*/
+
+.navigation-auto{
+position:absolute;
+display: flex;
+width: 800px;
+justify-content: center;
+margin-top: 460px;
+
+}
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+
+#r1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+}
+
+#r2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+}
+
+#r3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+}
+
+#r4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+}
+
+
+.contain h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+.image-grid {
+    --gap:16px;
+    --num-cols:2;
+    --row-height:300px;
+
+    box-sizing:border-box;
+    padding: var(--gap);
+
+    display:grid;
+    grid-template-columns: repeat(var(--num-cols) 1fr);
+    grid-auto-rows: var(--row-heights);
+    gap:var(--gap);
+    text-align: center;
+    
+    
+}
+
+
+.image-grid > img {
+    width : 50%;
+    object-fit: cover;
+    text-align: center;
+   
+}
+
+
+.image-grid-col-2 {
+    grid-column: span 2;
+    padding-top: 40%;
+    padding-left: 60%;
+    text-align: center;
+}
+
+.heading2 {
+    grid-column: span 2;
+    padding-top: 40%;
+    padding-left: 60%;
+    text-align: center;
+}
+
+.h4 {
+    padding-left: 60%;
+    text-align: center;
+
+}
+
+.get {
+    text-align: center;
+    padding-left: 60%;
+}
+
+
+
+
+ .cover {width: 400px;
+height: 400px;
+background:white ;
+margin-top: 20%;
+display:flex;
+border-radius: 20px;
+text-align: center;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    margin: 40px;
+    border-radius: 20px;
+    
+}
+
+.img {
+    width: 300px;
+    height:200px;
+}
+.box> img{
+    width: 500px;
+    padding-left: 20px;
+    border-radius: 20px;
+    
+}
+
+
+.box1 {
+    width: 400px;
+    height: 300px;
+    margin: 40px;
+   
+}
+
+.box1 >img{
+    width: 500px;
+   padding-left: 20px;
+   border-radius: 20px;
+   
+}
+
+header {background: rgb(254, 253, 255);
+
+border-bottom-color:#fff ;
+border: 6px solid;
+border-top-color: blue;
+border-left: hidden;
+border-bottom: hidden;
+border-right: hidden;}
+
+
+
+.payment {
+    display: grid;
+    padding-top: 10%;
+
+}
+
+th {
+    margin-left: 20px;
+}
+
+ td > .paytag {
+    word-wrap:break-word;
+    box-sizing: border-box;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+    border-radius: 30px;
+    width: 700px;
+    display: grid;
+   
+}
+
+td > h4 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ .paymentP {
+letter-spacing: 3px;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+transition: ease;
+}
+
+
+.services{
+    display: grid;
+    padding-top: 10%;
+    text-align: center;
+    box-shadow: 20px black;
+}
+
+.finance {
+    border-style: groove;
+    border-radius: 5px;
+    background: cornflowerblue;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+margin: 25px;
+}
+.finance:hover {
+    font-size: 20px;
+    box-shadow: 30px;
+    border-collapse: collapse;
+   
+}
+
+.balance {
+    border-style: groove;
+    border-radius: 5px;
+    background: cornflowerblue;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+margin: 25px;
+}
+
+.balance :hover{
+    font-size: 20px;
+    box-shadow: 30px;
+    border-collapse: collapse;
+}
+
+.awardwinners{
+    border-style: groove;
+    border-radius: 5px;
+    background: cornflowerblue;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+margin: 25px;
+}
+
+.awardwinners:hover {
+    font-size: 20px;
+    box-shadow: 30px;
+    border-collapse: collapse;
+   
+}
+
+.creditcard {
+    border-style: groove;
+    border-radius: 5px;
+    background: cornflowerblue;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+box-shadow: black 20px solid;
+margin: 25px;
+}
+
+.creditcard:hover {
+    font-size: 20px;
+    box-shadow: 30px;
+    border-collapse: collapse;
+}
+
+.services h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+.help{
+    padding-top: 5%;
+}
+
+
+.help {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding-top: 10%;
+
+}
+
+.helphead > h3{
+    font-family: 20px;
+    font-weight: 780;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+<!--
+.span .material-symbols-outlined{
+    font-size: 900%;
+}
+.helper{
+    text-align: center;
+    display:grid;
+    border-radius: 20px;
+font-size: 20px;
+background: linear-gradient(left, green,rgb(230, 230, 238));
+padding-top: 0%;
+
+}
+
+.helper > .callsign{
+   box-sizing: content-box;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: -webkit-linear-gradient(left, rgb(22, 1, 97),rgb(230, 230, 238));
+    
+}
+.helper > .callsign a{
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+
+}
+
+.helper > .callsign a:hover{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 25px;
+    color: darkblue;
+    
+}
+
+
+<!--
+
+.helper > .mailsign{
+    box-sizing: content-box;
+     border-radius: 5px;
+     text-transform: uppercase;
+     text-decoration: none;
+     background: -webkit-linear-gradient(left, rgb(22, 1, 97),rgb(230, 230, 238));
+ }
+ .helper > .mailsign a{
+     text-decoration: none;
+     font-weight: 900;
+     color: rgb(255, 255, 255);
+ 
+ }
+ 
+ .helper > .mailsign a:hover{
+     text-decoration: none;
+     font-weight: 900;
+     font-size: 25px;
+     color: darkblue;
+     
+ }
+ 
+ <!--
+
+ 
+.helper > .livechat{
+    box-sizing: content-box;
+     border-radius: 5px;
+     text-transform: uppercase;
+     text-decoration: none;
+     background: -webkit-linear-gradient(left, rgb(22, 1, 97),rgb(230, 230, 238));
+     padding-top: -10%;
+     
+ }
+ .helper > .livechat a{
+     text-decoration: none;
+     font-weight: 900;
+     color: rgb(255, 255, 255);
+     
+ 
+ }
+ 
+ .helper > .livechat a:hover{
+     text-decoration: none;
+     font-weight: 900;
+     font-size: 25px;
+     color: darkblue;
+     
+ }
+
+ <!--
+
+
+/* external skins for motto*/
+
+.mottor{
+margin-top: 49%;
+    padding: 5%;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: content-box;
+    background-color: rgb(3, 3, 148);
+    font-weight: 150;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* external skins for motto stops*/
+
+
+.gridpictures{
+font-size: 16px;
+}
+
+
+.gridpictures > h2{
+    padding-top:0%;
+    font-size: 30px;
+    text-decoration: solid;
+   
+}
+
+
+.gridpictures > table{
+    border-spacing: 20px;
+    text-align: center;
+    padding-left: 15%;
+  display: grid;
+}
+
+
+.gridpictures >table td{
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+}
+.gridpictures >table td:hover{
+    height: 600px;
+    width: 400px;
+    
+}
+
+.gridpictures >table th{
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+}
+.gridpictures >table th:hover{
+    height: 600px;
+    width: 400px;
+    
+}
+
+
+.gridpictures >p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/*the other sevices start*/
+
+.appointment{
+    padding-top: 50%;
+    text-align: center;
+    border-spacing: 100%;
+    margin-left: 10%;
+    letter-spacing: 1px;
+    display: grid;
+    box-shadow: 20px black;
+    cursor: pointer;
+    margin-bottom: -35%;
+}
+
+.bookL{
+    
+    border-radius: 5px;
+
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+margin: 25px;
+}
+
+
+
+.bankW{
+   
+    border-radius: 5px;
+
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+margin: 25px;
+}
+
+
+.ahome{
+
+    border-radius: 5px;
+
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+margin: 25px;
+}
+
+
+.plant{
+
+    border-radius: 5px;
+
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+margin: 25px;
+}
+
+
+
+
+
+.manage{
+
+    border-radius: 5px;
+    
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+margin: 25px;
+}
+
+
+
