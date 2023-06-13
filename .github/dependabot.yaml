@@ -1,0 +1,30 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    automerged: true
+    labels:
+      - "dependencies"
+    ignore:
+      - dependency-name: "requests"
+        versions: ["<2.0.0"]
+      - dependency-name: "numpy"
+        versions: ["<1.0.0"]
+    allow:
+      - dependency-type: "dev"
+        dependency-name: "pytest"
+        versions: ["<6.0.0"]
+    commit-message:
+      prefix: "chore(deps): update"
+      include: "dependencies"
+    reviewers:
+      - "@john"
+      - "@jane"
+    assignees:
+      - "@monica"
+    directory-file-path: "requirements.txt"
+    target-branch: "main"
+    package-aliases:
+      django: "^2.2.0"
